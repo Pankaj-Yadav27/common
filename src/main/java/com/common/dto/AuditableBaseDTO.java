@@ -2,7 +2,7 @@ package com.common.dto;
 
 import java.time.LocalDateTime;
 
-public class AuditableBaseDTO {
+public class AuditableBaseDTO extends BaseDTO {
     protected LocalDateTime createdAt=LocalDateTime.now();
     protected Boolean deleted=false;
     protected LocalDateTime updatedAt=LocalDateTime.now();

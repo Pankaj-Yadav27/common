@@ -5,7 +5,7 @@ import jakarta.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
 @MappedSuperclass
-public class AuditableBaseEntity {
+public class AuditableBaseEntity extends BaseEntity {
     protected LocalDateTime createdAt=LocalDateTime.now();
     protected Boolean deleted=false;
     protected LocalDateTime updatedAt=LocalDateTime.now();
