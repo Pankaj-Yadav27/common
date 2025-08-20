@@ -48,6 +48,10 @@ public class ErrorResponse {
         }
     }
 
+    public Error getError() {
+        return error;
+    }
+
     @Override
     public String toString() {
         return "ErrorResponse{" +
